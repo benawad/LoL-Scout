@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ColorPrimary">#616161</color>
+    <color name="ColorPrimaryDark">#424242</color>
+    <color name="LoseRed">#ff781b27</color>
+    <color name="WinGreen">#ff166338</color>
+    <color name="PrimaryBackground">#282828</color>
+    <color name="ChampionNameTextColor">#ff000000</color>
+    <color name="SummonerNameTextColor">#fff</color>
+    <color name="DescTextColor">#b0b0b0</color>
+</resources>

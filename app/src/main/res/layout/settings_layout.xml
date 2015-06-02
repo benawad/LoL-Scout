@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:background="@color/PrimaryBackground"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Region to Search Summoner"
+        android:id="@+id/settingsTitle"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/settingsTitle"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/radioGroup"
+        android:layout_alignParentLeft="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DescTextColor"
+            android:textSize="18sp"
+            android:text="NA"
+            android:id="@+id/na"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DescTextColor"
+            android:textSize="18sp"
+            android:text="EUW"
+            android:id="@+id/euw" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/DescTextColor"
+            android:text="EUNE"
+            android:id="@+id/eune"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DescTextColor"
+            android:textSize="18sp"
+            android:text="BR"
+            android:id="@+id/br" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/DescTextColor"
+            android:text="KR"
+            android:id="@+id/kr" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DescTextColor"
+            android:textSize="18sp"
+            android:text="LAN"
+            android:id="@+id/lan" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/DescTextColor"
+            android:text="LAS"
+            android:id="@+id/las" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/DescTextColor"
+            android:text="OCE"
+            android:id="@+id/oce" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/DescTextColor"
+            android:text="RU"
+            android:id="@+id/ru" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DescTextColor"
+            android:text="TR"
+            android:id="@+id/tr" />
+    </RadioGroup>
+</RelativeLayout>

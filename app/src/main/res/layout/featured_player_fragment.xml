@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PrimaryBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fp_top_half"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:id="@+id/fp_champion_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/fp_champion_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <benawad.com.lolscout.customs.FontFitTextView
+                android:id="@+id/fp_champion_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/fp_champion_image"
+                android:layout_alignRight="@id/fp_champion_image"
+                android:layout_below="@id/fp_champion_image"
+                android:background="@color/ChampionNameTextColor"
+                android:gravity="center_horizontal"
+                android:textColor="@color/ColorPrimary" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fp_info_base"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@id/fp_champion_base"
+            android:layout_toLeftOf="@id/fp_champion_base">
+
+            <benawad.com.lolscout.customs.FontFitTextView
+                android:id="@+id/fp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/SummonerNameTextColor"
+                android:gravity="left" />
+
+            <TextView
+                android:id="@+id/fp_league"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fp_name"
+                android:textColor="@color/DescTextColor"
+                android:gravity="left"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fp_games"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fp_league"
+                android:textColor="@color/DescTextColor"
+                android:gravity="left"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/fp_win_loss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fp_games"
+                android:gravity="left"
+                android:textSize="35sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/fp_win_loss"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/sword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/sword" />
+
+                    <TextView
+                        android:id="@+id/fp_kills_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/DescTextColor"
+                        android:layout_toRightOf="@+id/sword"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="kills"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/skull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/skull" />
+
+                    <TextView
+                        android:id="@+id/fp_deaths_text"
+                        android:textColor="@color/DescTextColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/skull"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="deaths"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/hand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@mipmap/hand" />
+
+                    <TextView
+                        android:id="@+id/fp_assists_text"
+                        android:textColor="@color/DescTextColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/hand"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="assists"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fp_items_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fp_top_half"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fp_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:background="@color/ColorPrimary"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/fp_item2"
+                android:padding="1dp"
+                android:background="@color/ColorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/fp_item3"
+                android:padding="1dp"
+                android:background="@color/ColorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/fp_item4"
+                android:padding="1dp"
+                android:background="@color/ColorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:padding="1dp"
+                android:background="@color/ColorPrimary"
+                android:id="@+id/fp_item5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:padding="1dp"
+                android:background="@color/ColorPrimary"
+                android:id="@+id/fp_item6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:padding="1dp"
+                android:background="@color/ColorPrimary"
+                android:id="@+id/fp_spell1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:padding="1dp"
+                android:background="@color/ColorPrimary"
+                android:id="@+id/fp_spell2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/fp_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fp_items_base"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>
